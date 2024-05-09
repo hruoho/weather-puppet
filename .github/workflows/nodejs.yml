@@ -1,6 +1,7 @@
 name: Take Screenshots Periodically
 
 on:
+  workflow_dispatch:
   schedule:
     - cron: '0 * * * *' # Runs the workflow every hour
 
