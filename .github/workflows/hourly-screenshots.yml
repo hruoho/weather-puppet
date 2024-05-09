@@ -1,4 +1,4 @@
-name: Take Screenshots Periodically
+name: Take Screenshots Hourly
 
 on:
   workflow_dispatch:
@@ -50,7 +50,7 @@ jobs:
         run: mkdir -p foreca-clips
 
       - name: Run script
-        run: npx ts-node run-take-screenshot.ts
+        run: npx ts-node take-screenshots.ts
 
       - name: Upload screenshots as artifact
         uses: actions/upload-artifact@v2
