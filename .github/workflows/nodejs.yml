@@ -50,7 +50,7 @@ jobs:
         run: mkdir -p foreca-clips
 
       - name: Run script
-        run: ts-node run-take-screenshot.ts
+        run: npx ts-node run-take-screenshot.ts
 
       - name: Upload screenshots as artifact
         uses: actions/upload-artifact@v2
